@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  html {
+    font-family: Roboto, Proxima Nova, system-ui, sans-serif;
+  }
+} */
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+} */
+/* 
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
+
+
+.facetInput {
+  @apply border-b-2 border-[#006dae] shadow p-2
+}
+
+.facetInput-focus {
+  @apply border-orange-600;
+}
+
+.checkmark {
+	background-color: #006dae;
+	position: absolute;
+    top: 0px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #006dae;
+}
+
+input:checked~.checkmark {
+	background-color: #006dae;
+	
+}
+
+input:checked~.checkmark:after {
+	display: block;
+	left: 7px;
+    top: 2px;
+    width: 3px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+	content: "";
+    position: absolute;
+	box-sizing:unset;
+}
+
+.monash-shadow { box-shadow: 0 1px 8px rgb(0 0 0 / 10%); }
+
+.font-heading { font-weight: bold; }
+
+.icon { 
+	fill: currentColor; 
+	/* clip-path: polygon(0 0,100% 0,80% 100%,0% 100%);  */
+	background-image: url('https://www.monash.edu/__data/assets/image/0012/2669727/read-the-plan-1.jpg');
+	/* background-color: #f6f6f6; */
+	background-position: 49% 82%;
+}
+/* .icon {
+	background-size: cover;
+	background-image: url('https://www.monash.edu/__data/assets/image/0007/3028759/2022-Oct-Grad-Expo_Web-campaign-pg-banner-2400x900-1.jpg');
+} */
+
+/* .icon {
+	background-size: auto;
+	background-image: url('https://www.monash.edu/__data/assets/image/0011/2653886/Web_Banner-2400x900-011.jpg');
+} */
+.icon svg { clip-path: none; background-image: none; background-color: none; }
+
+.icon-mada {
+	background-position: 100% 100%;
+	background-image: url('https://www.monash.edu/__data/assets/image/0005/2522219/Faculty-Tile-ADA.jpg');
+}
+.icon-arts {
+	background-image: url('https://www.monash.edu/__data/assets/image/0015/2522220/Faculty-Tile-Arts.jpg');
+}
+.icon-mbus {
+	background-size: cover;
+	background-image: url('https://www.monash.edu/__data/assets/image/0018/2520405/2021-course-banners-Business.jpg');
+}
+.icon-eng {
+	background-size: cover;
+	background-image: url('https://www.monash.edu/__data/assets/image/0009/3055995/2021-course-banners-Engineering-50.jpg');
+	/* background-image: url('https://www.monash.edu/__data/assets/image/0020/2522225/Faculty-Tile-Engineering.jpg'); */
+}
+
+.icon-edu {
+	background-size: cover;
+	background-image: url('https://www.monash.edu/__data/assets/image/0019/2522224/Faculty-Tile-Education.jpg');
+}
+
+.icon-it {
+	background-size: cover;
+	background-image: url('https://www.monash.edu/__data/assets/image/0003/2520408/2021-course-banners-IT.jpg');
+}
+
+.icon-law {
+	background-position: 49% 82%;
+	background-size: cover;
+	background-image: url('https://www.monash.edu/__data/assets/image/0006/2522229/Faculty-Tile-Law.jpg');
+}
+
+.icon-med {
+	background-position: 85% 100%;
+	background-size: normal;
+	/* background-image: url('https://www.monash.edu/__data/assets/image/0016/2522230/Faculty-Tile-MNHS.jpg'); */
+	background-image: url('https://www.monash.edu/__data/assets/image/0014/2520410/2021-course-banners-MNHS.jpg');
+}
+
+.icon-pharm {
+	background-image: url('https://www.monash.edu/__data/assets/image/0003/2522235/Faculty-Tile-Pharmacy.jpg');
+}
+
+.icon-science {
+	background-image: url('https://www.monash.edu/__data/assets/image/0005/2522237/Faculty-Tile-Science.jpg');
+}
+
